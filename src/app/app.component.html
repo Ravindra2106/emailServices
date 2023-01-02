@@ -1,0 +1,16 @@
+<div id="container">
+  <form [formGroup]="emailForm">
+  <div id="sub-container">
+  <div id="email">
+    <label>Email<span>*</span></label>
+  <input formControlName="email" type="email" />
+  </div>
+  <div id="comment">
+    <label>Comment<span>*</span></label>
+    <textarea formControlName="comment" type="text"></textarea>
+  </div>
+  <button (click)="onEmail()">submit</button>
+  </div>
+  </form>
+</div>
+

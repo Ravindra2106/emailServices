@@ -35,9 +35,11 @@ export class AppComponent {
   {
     // console.log("email>>",this.email);
     this.http.post("http://localhost:8000/email", this.newEmail()).subscribe((res)=>{
+      // alert("email sent succesfully");
       console.log(res);
-    });
-    
+    }
+    );
+    alert("email sent succesfully");
   }
   newEmail()
   {
